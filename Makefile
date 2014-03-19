@@ -5,7 +5,7 @@ BINDIR=bin
 
 OBJECTS=$(OBJECTDIR)/includes.o
 
-all: clean client server test
+all: clean client server
 
 client: bdir includes
 	$(CC) client.c $(OBJECTS) -o $(BINDIR)/$@ -pthread
